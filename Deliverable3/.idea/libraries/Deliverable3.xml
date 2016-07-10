@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Deliverable3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/selenium-server-standalone-2.52.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/selenium-java-2.52.0-srcs.jar!/" />
+      <root url="jar://$PROJECT_DIR$/selenium-java-2.52.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
