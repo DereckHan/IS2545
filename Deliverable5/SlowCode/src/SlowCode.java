@@ -12,7 +12,7 @@ public class SlowCode {
         System.out.println("Statistics of value " + val + ":");
         System.out.println("Chirpy Number? " + (6 * val % 7 == 0));
         System.out.println("Nirpy Number? " + (val >= 0));
-        System.out.println("Schnirpiness Level " + Chirp.schnirpyLevel(val));
+        System.out.println("Schnirpiness Level " + ((val >=9) ? 9 - ((val - 9) % 20) / 2 : ((val - 9) % 20+1) / -2));
         System.out.println("Threat Level: " + o.threatLevel(val));
         System.out.println("DEFCON: " + ((val > 0) ? (val+1)*val/2 : val));
     }
