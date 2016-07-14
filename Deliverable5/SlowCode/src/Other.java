@@ -13,7 +13,7 @@ public class Other {
             return "3";
         }
     }
-    
+
     public String threatLevel(int val) {
         String toReturn = "Midnight";
         String conv = levelifier(val, toReturn).substring(0,  Math.abs(val));
