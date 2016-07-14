@@ -8,8 +8,9 @@ public class Other {
 
 
     public String levelifier(int val, String toReturn) {
-
-        if (toReturn.length()<Math.abs(this.val)) {
+        if (val >= 1500)
+            return "3";
+        if (toReturn.length() < Math.abs(this.val)) {
             return toReturn + this.levelifier(++val, toReturn + "2");
         }
         return "3";
@@ -17,7 +18,7 @@ public class Other {
 
     public String threatLevel(int val) {
         String toReturn = "Midnight";
-        String conv = levelifier(val, toReturn).substring(0,  Math.abs(val));
+        String conv = levelifier(val, toReturn).substring(0, Math.abs(val));
         return conv;
     }
 }
