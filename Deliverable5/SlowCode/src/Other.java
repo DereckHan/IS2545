@@ -6,12 +6,13 @@ public class Other {
         this.val = val;
     }
 
+
     public String levelifier(int val, String toReturn) {
-        if (val < 1500) {
+
+        if (toReturn.length()<Math.abs(this.val)) {
             return toReturn + this.levelifier(++val, toReturn + "2");
-        } else {
-            return "3";
         }
+        return "3";
     }
 
     public String threatLevel(int val) {
