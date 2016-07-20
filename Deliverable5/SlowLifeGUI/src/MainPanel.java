@@ -23,6 +23,8 @@ public class MainPanel extends JPanel {
 
     public boolean _running = false;
 
+    public boolean cells_equal_backupCells = false;
+
     public int getCellsSize() {
         return _size;
     }
@@ -248,9 +250,10 @@ public class MainPanel extends JPanel {
 
     public void run() {
         backup();
-        System.out.println("backupCell is equals to current Cell: " + (_cells == _backupCells));
-        if (_cells != _backupCells)
-            stop();
+        cells_equal_backupCells = _cells == _backupCells;
+//        System.out.println("backupCell is equals to current Cell: " + (_cells == _backupCells));
+//        if (_cells != _backupCells)
+//            stop();
         calculateNextIteration();
     }
 
@@ -274,9 +277,10 @@ public class MainPanel extends JPanel {
             //    _r = origR;
             //    System.out.println("_r is "+_r);
             backup();
-            System.out.println("backupCell is equals to current Cell: " + (_cells == _backupCells));
-            if (_cells != _backupCells)
-                stop();
+            cells_equal_backupCells = _cells == _backupCells;
+//            System.out.println("backupCell is equals to current Cell: " + (_cells == _backupCells));
+//            if (_cells != _backupCells)
+//                stop();
             calculateNextIteration();
         }
     }
@@ -296,9 +300,10 @@ public class MainPanel extends JPanel {
             }
             _r = origR;
             backup();
-            System.out.println("backupCell is equals to current Cell: " + (_cells == _backupCells));
-            if (_cells != _backupCells)
-                stop();
+            cells_equal_backupCells = _cells == _backupCells;
+//            System.out.println("backupCell is equals to current Cell: " + (_cells == _backupCells));
+//            if (_cells != _backupCells)
+//                stop();
             calculateNextIteration();
         }
     }
