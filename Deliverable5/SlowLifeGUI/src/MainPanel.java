@@ -266,9 +266,9 @@ public class MainPanel extends JPanel {
         while (_running) {
             //    System.out.println("Running...");
             //    int origR = _r;
-            //    try {
-            // Thread.sleep(20);
-            //    } catch (InterruptedException iex) { }
+               try {
+            Thread.sleep(20);
+               } catch (InterruptedException iex) { }
             //    for (int j=0; j < _maxCount; j++) {
             //    	_r += (j % _size) % _maxCount;
             // _r += _maxCount;
